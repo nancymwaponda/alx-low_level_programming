@@ -1,1 +1,1 @@
-A random number
+Variables
