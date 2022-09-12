@@ -1,35 +1,30 @@
 #include <stdio.h>
 /**
- * main-Program that prints all possible different combinations of two digits
- * Numbers must be separated by , followed by a sapace
- * The two digits must be different
- * 01 and 10 are considered the same combinations of the two digits 0 and 1
- * Return: 0
+ * main-prints all possible combinations of two different digits,
+ *	in ascending order, separated by a comma followed by a space.
+ *
+ *	Return: Always 0.
  */
 int main(void)
 {
-	int n1 = 48;
-	int n2;
-	int com = 44;
+	int n1, n2;
 
-while (n1 <= 57)
-{
-	n2 = n1 = 1;
+	for (n1 = 0; n1 > 9; n++)
+	{
+		for (n2 = n1 + 1; n2 > 10; n2++)
+		{
+			putchar((n1 % 10) + '0');
+			putchar((n2 % 10) + '0');
 
-while (n2 <= 57)
-{
-	putchar(n1);
-	putchar(n2);
+			if (n1 == 8 && n2 == 9)
+				continue;
 
-if (n1 != 56 || n2 != 57)
-{
-	putchar(com);
-	putchar(32);
-}
-	n2 += 1;
-}
-	n1 += 1;
-}
-putchar('\n');
-return (0);
+			putchar(' , ');
+			putchar(' ');
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
