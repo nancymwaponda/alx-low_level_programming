@@ -1,19 +1,24 @@
+#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main-Entry point.
- * Return: Always 0.
+ * main-Prints the "_putchar" on the
+ * screen with the help of the function _putchar()
+ * Return: 0
  */
 int main(void)
 {
-	char *file = "Putchar";
+	putchar
+		_putchar('p');
+		_putchar('u');
+		_putchar('t');
+		_putchar('c');
+		_putchar('h');
+		_putchar('a');
+		_putchar('r');
+		_putchar('\n');
 
-	while (*file)
-	{
-		_putchar(*file);
-		file++;
-	}
-	_putchar('\n');
-
-	return (0);
+		return (0);
 }
+
