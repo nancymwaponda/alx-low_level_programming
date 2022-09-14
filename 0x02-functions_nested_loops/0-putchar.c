@@ -1,28 +1,19 @@
 #include "main.h"
+
 /**
- * _putchar-Writes a program that prints _putchar,
- * followed by a new line
+ * main-Entry point.
  * Return: Always 0.
  */
-
 int main(void)
 {
-	char ch{8} = {"_putchar"};
+	char *file = "Putchar";
 
-	int i = 0;
-
-	char m;
-
-	while (i <= 8)
+	while (*file)
 	{
-		m = ch{i};
-		_putchar(m);
-		i++;
+		_putchar(*file);
+		file++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
-
-
-
-
