@@ -1,1 +1,1 @@
-Positive anything is better than negative nothing
+All debugs will be successful
