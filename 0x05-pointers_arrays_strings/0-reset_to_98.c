@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- * _puts-writes a function that prints a string,
- * followed by a new line, to stdout.
- * @str: This is my input string.
- */
-void _puts(char *str)
-{
-	int index;
+*reset_to_98-resets the value of given integer to 98
+*@n: parameter
+*Return: nothing
+*/
 
-	for (index = 0; str[index] != '\0' : index++)
-	{
-		_putchar(str[index]);
-	}
-	_putchar('\n');
+void reset _to_98(int *n)
+{
+	*n = 98;
