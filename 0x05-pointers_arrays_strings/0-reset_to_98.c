@@ -9,3 +9,4 @@
 void reset _to_98(int *n)
 {
 	*n = 98;
+}
